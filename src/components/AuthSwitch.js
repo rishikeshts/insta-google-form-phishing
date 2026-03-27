@@ -33,7 +33,7 @@ const AuthSwitch = ({ currentView, setCurrentView }) => {
       {currentView === 'forgotPassword' && (
         <p>
           <a 
-            href="#" 
+            href="#!" 
             id="back-to-login" 
             onClick={(e) => { e.preventDefault(); setCurrentView('login'); }}
           >

