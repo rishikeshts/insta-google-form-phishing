@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --ig-primary-button: #0095f6;
+  --ig-primary-button-hover: #1877f2;
+  --ig-secondary-button: #dbdbdb;
+  --ig-background: #0a0a0a; /* Deep premium black/gray */
+  --ig-text-primary: #ffffff;
+  --ig-text-secondary: #a8a8a8;
+  --ig-border: #262626;
+  --ig-box-bg: rgba(18, 18, 18, 0.8);
+  --ig-link: #e0f1ff;
+  --ig-error: #ed4956;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--ig-background);
+  color: var(--ig-text-primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--ig-link);
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+  outline: none;
+}
+
