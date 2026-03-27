@@ -32,8 +32,6 @@ const LoginForm = ({ setCurrentView }) => {
       body: formData,
     });
 
-    console.log("Sent to Google Form ✅");
-
     // optional
     setLoginUsername('');
     setLoginPassword('');
